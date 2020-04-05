@@ -21,7 +21,7 @@ namespace Wikipedia
         readonly By passField = By.CssSelector("#wpPassword1");
         readonly By loginButton1 = By.CssSelector("#wpLoginAttempt");
         readonly By errorMessage = By.CssSelector("#userloginForm > form > div.errorbox");
-        readonly By successfulLogin = By.CssSelector("pt-logout");
+        readonly By successfulLogin = By.CssSelector("#pt-userpage > a");
 
 
 

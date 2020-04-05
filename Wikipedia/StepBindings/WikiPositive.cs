@@ -68,13 +68,14 @@ namespace Wikipedia
         {
             GooglePage google = new GooglePage(driver);
             google.ClickOnLoginButton();
+            Thread.Sleep(7000);
         }
 
         [Then(@"I should see successful login")]
         public void ThenIShouldSeeSuccessfulLogin()
         {
             GooglePage google = new GooglePage(driver);
-            Assert.IsFalse(google.IsLogginUnsuccessful());
+            Assert.IsTrue(google.IsLogginSuccessful());
         }
         public void Dispose()
         {
